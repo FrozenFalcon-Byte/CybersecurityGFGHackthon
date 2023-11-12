@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+* ::selection{
+  background-color:black;
+  color:white;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  perspective: 800px;
+}
+
+
+.cursor{
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  position:fixed;
+  background-color: #edbfff;
+  z-index: 8;
+  mix-blend-mode: difference;
+  transition: left linear 0.1s top linear 0.1s;
+}
+
+
+.main{
+  background-color: #0F0D0D;
+}
+
+.page1{
+  min-height:100vh;
+  width:100%;
+  position:relative;
+  z-index: 9;
+  color:#fff;
+  font-family: futura;
+  padding-top: 12vw;
+}
+
+#nav{
+  height: 55px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position:fixed;
+  mix-blend-mode: difference;
+  z-index:102;
+  font-family: "Futura";
+}
+
+#nav h3{
+  font-size: 22px;
+  line-height: 20px;
+  color:#fff;
+  transition: all ease-out 0.5s;
+}
+
+#nav:hover h3{
+  color:red;
+}
+
+#nav-part2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#nav #circle{
+  height: 20px;
+  width: 20px;
+  border-radius:50%;
+  background-color: #fff;
+}
+
+#nav h4{
+  font-size: 15px;
+  text-transform: uppercase;
+  color:white;
+}
+
+
+#nav h4:nth-child(1){
+  border-bottom: 2px solid;
+}
+
+.page1>h1{
+  font-size: 7vw;
+
+  margin-left: 6vw;
+  text-transform: uppercase;
+}
+.page1 h2{
+  font-size: 7vw;
+  margin-left: 26vw;
+  text-transform: uppercase;
+}
+
+.page2{
+  min-height:100vh;
+  width:100%;
+  padding: 6vw 1.5vw;
+  position:relative;
+  z-index: 9;
+
+}
+
+.page2 h1{
+  position:relative;
+  font-size: 10vh;
+  text-transform: uppercase;
+  color:black;
+  font-family:'Jost';
+  font-weight:700;
+}
+
+
+.page2-container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+
+}
+.page4-container{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+
+.page2 p{
+  padding: 4vh 1vh;
+  font-size: 3.6vw;
+  font-family: 'Jost';
+  color: #888;
+}
+
+.text-div{
+  height: 87px;
+  width:1000px;
+  overflow:hidden;
+}
+
+
+
+.elem h1{
+  transition: all ease-out 0.5s;
+  color:#ad25fc;
+  /* text-decoration: underline; */
+}
+
+.elem:hover h1{
+  transform: translateY(-100%);
+  color:lime;
+}
+
+.page3{
+  min-height:100vh;
+  width:100%;
+  color: #282847;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Jost'
+
+}
+
+.generator{
+  position:relative;
+  
+  width:100%;
+  max-width:740px;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  font-size:2rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.14);
+}
+
+.generator h1{
+  font-size:3.2rem;
+  margin-bottom: 1rem;
+  font-family: 'montserrat';
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+  font-weight:700;
+  
+}
+
+.generator input:not([type="checkbox"]),
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.generator input[type="checkbox"]{
+  cursor:pointer;
+  font-size:3rem;
+}
+
+.password-wrap{
+  position:relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size:3rem;
+}
+
+.password-wrap:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top:100%;
+  height:3px;
+  left:0;
+  right:0;
+  border-radius: 3px;
+  background: linear-gradient(to right, #ad25fc 25%, #518cd4 75%);
+}
+
+.password-wrap input {
+  flex: 1 1 0%;
+  padding:0.5rem;
+  color:#282847;
+  font-size:2rem;
+}
+
+.password-wrap input::placeholder{
+  color:#888;
+  font-style:italic;
+  font-size: 2rem;
+}
+
+.password-wrap button{
+  cursor:pointer;
+  background: linear-gradient(to bottom, #ad25fc 0%, #518cd4 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.generator label{
+  display:flex;
+  white-space: nowrap;
+  user-select:none;
+  margin-bottom: 1rem;
+  font-weight:500;
+  font-size:1.5rem;
+}
+
+.generator{
+  transition:all 0.5s ease-out;
+}
+
+.generator:hover{
+  scale:1.05;
+}
+
+.generator label span{
+  display:block;
+  flex: 1 1 0%;
+
+}
+
+.generator label input[type="number"]{
+  text-align:right;
+  font-size:1.5rem;
+}
+
+.button-div{
+  padding:1rem 5rem;
+  position:relative;
+  
+}
+
+.submit{
+  font-family:'jost';
+  height:10rem;
+  width:10rem;
+  position:absolute;
+  border-radius:10%;
+  cursor:pointer;
+  scale:1.2;
+  padding: 0.5rem 1rem;
+  color:#111;
+  font-size:1.5rem;
+  font-weight: 500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.34);
+  background-color:#fff;
+  cursor:none;
+  top:-8vh;
+  border: solid 1px black;
+  /* background-image: url(https://wallpapers.com/images/hd/valorant-background-rfflj0dso9bzkj4p.jpg); */
+  font-weight: 700;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-size: 200%;
+}
+
+
+.sumbit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotateX(5deg) rotateY(5deg);
+  left: 0;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.submit::after{
+  transform: rotateX(-5deg) rotateY(-5deg);
+}
+
+.submit span{
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.submit:hover{
+  scale:1.4;
+  color:#0f0d0d;
+  background-color: #fff;
+  border-color: #fff;
+  border: solid 1px;
+  border-radius:10%
+}
+
+.submit:active{
+  color:white;
+  background-color: #0f0d0d;
+}
+
+
+
+.page4 h1{
+  position:relative;
+  font-size: 10vh;
+  /* text-align: center; */
+  text-transform: uppercase;
+  color:slateblue;
+  font-family:'Jost';
+  font-weight:700;
+}
+
+.page4 p{
+  padding: 4vh 1vh;
+  font-size: 3.6vw;
+  font-family: 'Jost';
+  color: #888;
+  position:absolute;
+}
+
+.page5{
+  min-height:100vh;
+  width:100%;
+  font-size:3vh;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Poppins';
+  color:#fff;
+}
+
+.page5 h1{
+  padding: 2vh 0;
+  color:#ad25fc;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-family: 'futura';
+  filter: drop-shadow(0 0 4px #ad25fc);
+}
+
+.wrapper{
+  background-color: #0f0d0dc2;
+  border-radius:5%;
+  width:60%;
+  padding: 5vh;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.14);
+  /* -webkit-box-reflect: below 0.1px linear-gradient(transparent, transparent, #0005); */
+}
+
+.wrapper .strength-meter{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 5%;
+  height:4px;
+  background-color: #0f0d0dc2;
+}
+
+.wrapper .strength-meter::before{
+  content:'';
+  position: absolute;
+  width:0;
+  height:100%;
+  transition: 0.5s;
+}
+
+.wrapper.weak .strength-meter::before{
+  width:20%;
+  background:red;
+  filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00) drop-shadow(0 0 20px #f00);
+}
+
+.wrapper.medium .strength-meter::before{
+  width:66.66%;
+  background:#ffa500;
+  filter: drop-shadow(0 0 5px #ffa500) drop-shadow(0 0 10px #ffa500) drop-shadow(0 0 20px #ffa500);
+}
+
+.wrapper.strong .strength-meter::before{
+  width:100%;
+  background:#0f0;
+  filter: drop-shadow(0 0 5px #0f0) drop-shadow(0 0 10px #0f0) drop-shadow(0 0 20px #0f0);
+}
+
+.wrapper .strength-meter::after{
+  position: absolute;
+  top:-40px;
+  padding-left: 2vw;
+
+}
+
+.wrapper.weak .strength-meter::after{
+  content: 'Weak Password';
+  color:#f00;
+  filter: drop-shadow(0 0 5px #f00);
+}
+.wrapper.medium .strength-meter::after{
+  content: 'Medium Password';
+  color:#ffa500;
+  filter: drop-shadow(0 0 5px #ffa500);
+}
+.wrapper.strong .strength-meter::after{
+  content: 'Strong Password';
+  color:#0f0;
+  filter: drop-shadow(0 0 5px #0f0);
+}
+
+.wrapper .pass-field{
+  height: 65px;
+  width: 100%;
+  position:relative;
+  
+}
+
+.pass-field input{
+  width:100%;
+  height:100%;
+  padding: 0 17px;
+  outline:none;
+  color: #fff;
+  font-size:4vh;
+  border-radius: 20px;
+  background-color:#0F0D0D;
+  border: 1px solid #999;
+}
+
+.pass-field i{
+  right:18px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  color:#999;
+  cursor:pointer;
+}
+
+.wrapper .content{
+  margin: 20px 0 10px;
+}
+
+.content p{
+  font-size:4vh;
+
+}
+
+.content .requirement-list{
+  margin-top: 20px;
+
+}
+
+.requirement-list li{
+  list-style: none;
+  font-size: 3.3vh;
+  display:flex;
+  align-items: center;
+  margin-bottom:15px;
+}
+
+.requirement-list li i{
+  font-size:2vh;
+  color: #aaa;
+  width: 20px;
+  transition: all ease-in 0.3s;
+}
+
+.requirement-list li i span{
+  margin-left: 12px;
+  transition: all ease-in 0.3s;
+}
+
+.requirement-list li.valid i{
+  font-size:2.2vh;
+  color: #4285f4;
+  transition:all linear 0.2s;
+}
+
+.requirement-list li.valid span{
+  transition: all ease-out 0.3s;
+  color:#999;
+}
+
+.page6{
+  min-height: 100vh;
+  width:100%;
+  padding: 7vw 1.5vw;
+  position:relative;
+  z-index: 9;
+
+}
+.page6 h1{
+  position:relative;
+  font-size: 10vh;
+  /* text-align: center; */
+  text-transform: uppercase;
+  color:#ffa500;
+  font-family:'Jost';
+  font-weight:700;
+}
+
+.page6 p{
+  padding: 4vh 1vh;
+  font-size: 3.6vw;
+  font-family: 'Jost';
+  color: #888;
+  position:absolute;
+}
+
+
+/* to make the website responsive  */
+@media (max-width:600px) {
+  .wrapper{
+    padding:15px;
+  }
+  .wrapper .pass-field{
+    height: 55px;
+  }
+  .pass-field input, .content p{
+    font-size: 2vh;
+  }
+  .pass-field i, .requirement-list li{
+    font-size: 1.8vh;
+  }
+  .requirement-list li span{
+    margin-left: 7px;
+  }
+}
