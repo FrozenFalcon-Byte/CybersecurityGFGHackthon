@@ -18,7 +18,7 @@ This website can be accessed through the following link
 # Credits
 This website was made by the team AIML DEVS.
 Team members:
-Ajinkya Chavan
-Rashi Khandelwal
-Zaina Deshmukh
-Shruti Yeole
+Ajinkya Chavan  
+Rashi Khandelwal  
+Zaina Deshmukh  
+Shruti Yeole  
