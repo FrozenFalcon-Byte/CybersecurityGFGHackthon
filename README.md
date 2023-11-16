@@ -16,7 +16,7 @@ Verify the strength of your passwords using CipherCraft's Strength Checker. Rece
 This website can be accessed through the following link
 
 ## Credits
-This website was made by the team AIML DEVS.  
+This website was made by the team ####AIML DEVS.  
 Team members:  
 Ajinkya Chavan  
 Rashi Khandelwal  
