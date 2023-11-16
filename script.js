@@ -104,7 +104,7 @@ gsap.to("#page2-cont>p>span", {
     scrub: 0.5,
   },
   stagger: 0.2,
-  color:`#111`,
+  color:`#0f0d0d`,
   opacity: `1`
 
 })
@@ -112,8 +112,8 @@ gsap.to("#page2-cont>p>span", {
 gsap.to("#page4-cont>p>span", {
   scrollTrigger:{
     trigger: `#page4-cont>p>span`,
-    start: `40vw 619vw`,
-    end: `500vw 614vw`,
+    start: `41vw 619vw`,
+    end: `545vw 614vw`,
     scroller: `.main`,
     scrub: 0.5,
   },
@@ -134,7 +134,7 @@ var tl4 = gsap.timeline({
 })
 
 tl4.to(".main", {
-  backgroundColor: "#111"
+  backgroundColor: "#0f0d0d"
 })
 
 

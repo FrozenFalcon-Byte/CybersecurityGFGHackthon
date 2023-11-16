@@ -7,7 +7,7 @@
 }
 
 * ::selection{
-  background-color:black;
+  background-color:#0f0d0d;
   color:white;
 }
 
@@ -31,7 +31,7 @@ html, body{
 
 
 .main{
-  background-color: #0F0D0D;
+  background-color: #0f0d0d;
 }
 
 .page1{
@@ -50,52 +50,20 @@ html, body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0px 0px;
   position:fixed;
   mix-blend-mode: difference;
   z-index:102;
   font-family: "Futura";
 }
 
-#nav h3{
-  font-size: 22px;
-  line-height: 20px;
-  color:#fff;
-  transition: all ease-out 0.5s;
+#nav img{
+  height:220px;
+  width:220px;
+  filter: invert();
+  padding-top:35px;
 }
 
-#nav:hover h3{
-  color:red;
-}
-
-#nav-part2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-#nav-part3{
-  cursor: pointer;
-}
-
-#abt{
-  text-transform: uppercase;
-  text-align: center;
-  filter: invert(100%);
-  cursor:pointer;
-  font-size: 2.3vh;
-  transition:all ease 0.3s;
-}
-
-#abt:hover{
-  scale:1.2;
-  text-decoration:underline;
-}
-
-#nav h4:nth-child(1){
-  border-bottom: 2px solid;
-}
 
 .page1>h1{
   font-size: 7vw;
@@ -199,7 +167,7 @@ html, body{
 .generator h1{
   font-size:3.2rem;
   margin-bottom: 1rem;
-  font-family: 'montserrat';
+  font-family: 'poppins';
   text-transform: uppercase;
   text-align: center;
   letter-spacing: -1px;
@@ -544,16 +512,52 @@ button {
 
 
 .page6{
-  min-height: 100vh;
+  min-height: 170vh;
   width:100%;
   position:relative;
   z-index: 9;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.page6 img{
+  filter:invert(95%);
+  transition:all 0.3s ease;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.02);
+
+}
+
+.page6 img:hover{
+  filter:invert(0%);
+  scale:1.1;
+}
+
+.logo{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.logo h3{
+  font-size: 6vh;
+  font-family: poppins;
+  padding: 0vh 7vh;
+  padding-bottom: 1vh;
+  text-transform: uppercase;
+  color:#fff;
+  line-height: 15vh;
+  font-family:'futura', 'poppins';
+  font-weight:700;
+  line-height:8vh;
+}
 
 .page6 h1{
   position:relative;
-  font-size: 15vh;
+  text-align: center;
+  font-size: 12vh;
   padding: 11vh 7vh;
   padding-bottom: 1vh;
   text-transform: uppercase;
@@ -589,7 +593,7 @@ button {
 }
 
 .page6 h2{
-  color:#ea25fc;
+  color:#0f0f;
   transition: all ease 0.3s;
 }
 
