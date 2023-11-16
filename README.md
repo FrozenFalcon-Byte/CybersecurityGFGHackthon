@@ -14,3 +14,6 @@ Verify the strength of your passwords using our Password Validator. Receive inst
 
 # Strength Checker
 Determine the strength of existing passwords with our Strength Checker. Understand the vulnerabilities and strengths of your passwords, empowering you to enhance your overall cybersecurity posture.
+
+# Aceessing the project
+This website can be accessed through the following link
