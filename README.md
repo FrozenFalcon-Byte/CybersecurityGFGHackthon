@@ -3,7 +3,7 @@
 Welcome to CipherCraft, the GFG Hackathon Cybersecurity Project! 🚀
 
 ## Overview
-This repository houses the code for a dynamic and secure website developed for the GFG (GeeksforGeeks) Hackathon in the domain of Cybersecurity. CipherCraft focuses on enhancing password security through a comprehensive set of tools, including a Password Generator and Strength Checker.
+This repository houses the code for a dynamic and secure website developed for the GFG (GeeksforGeeks) Hackathon in the domain of Cybersecurity. CipherCraft focuses on enhancing password security through a comprehensive set of tools, including a Password Generator and Strength Checker. This Website was made using HTML CSS and JavaScript using two major libraries - gsap and locomotive scrollTrigger.
 
 ## Features
 ### Password Generator
