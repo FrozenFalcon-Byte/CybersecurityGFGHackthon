@@ -13,7 +13,7 @@ Create strong and secure passwords effortlessly with CipherCraft's Password Gene
 Verify the strength of your passwords using CipherCraft's Strength Checker. Receive instant feedback on password security, helping you make informed decisions to fortify your online presence. Also determine the strength of existing passwords this tool. Understand the vulnerabilities and strengths of your passwords, empowering you to enhance your overall cybersecurity posture.
 
 ## Aceessing the project
-This website can be accessed through the following link:
+This website can be accessed through the following link:  
 https://frozenfalcon-byte.github.io/CybersecurityGFGHackthon/
 
 ## Credits
